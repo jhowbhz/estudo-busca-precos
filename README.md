@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
 </p>
 
-## BuscaPrecos 
+## BuscaPrecos 🔎
 
 <strong>Comparador de precos de eletrônicos em tempo real</strong>, que busca simultaneamente em 13+ lojas brasileiras com resultados progressivos via streaming
 
@@ -21,7 +21,7 @@
 O **BuscaPrecos** é um simples estudo de motor de busca de precos que consulta multiplas lojas de eletrônicos ao mesmo tempo. Os resultados chegam em tempo real conforme cada loja responde, sem esperar todas terminarem.
 
 
-## Problema que resolve
+## Problema que resolve 🤷🏻‍♂️
 
 Comparar precos manualmente em dezenas de sites e demorado. O BuscaPrecos faz isso em segundos.
 
