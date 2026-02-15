@@ -1,0 +1,28 @@
+{
+  "name": "scraper-lojas-brasileiras",
+  "version": "1.0.0",
+  "description": "Web scraper para lojas brasileiras - Magazine Luiza, Americanas, etc",
+  "main": "scraper-magalu-exemplo.js",
+  "scripts": {
+    "scraper": "node scraper-magalu-exemplo.js",
+    "debug": "node scraper-magalu-exemplo.js --debug",
+    "test": "echo \"Erro: testes não implementados\" && exit 1"
+  },
+  "keywords": [
+    "web-scraping",
+    "puppeteer",
+    "e-commerce",
+    "brasil",
+    "magazine-luiza",
+    "americanas"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.9.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
