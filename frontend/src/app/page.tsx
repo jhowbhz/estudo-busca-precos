@@ -92,6 +92,11 @@ export default function Home() {
     setSelectedIndex(-1)
   }, [query])
 
+  // Focar o input após montagem no cliente (evita hydration mismatch)
+  useEffect(() => {
+    inputRef.current?.focus()
+  }, [])
+
   return (
     <main className="min-h-screen bg-white flex flex-col items-center justify-center px-4">
       <div className="w-full max-w-[580px] -mt-20">
@@ -131,7 +136,6 @@ export default function Home() {
                 onKeyDown={handleKeyDown}
                 className="flex-1 text-base text-gray-700 placeholder-gray-400 outline-none bg-transparent"
                 placeholder="Buscar produto..."
-                autoFocus
                 autoComplete="off"
                 role="combobox"
                 aria-expanded={visibleSuggestions}
