@@ -55,6 +55,17 @@ export default function Home() {
   }
 
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault()
+      if (visibleSuggestions && selectedIndex >= 0 && selectedIndex < suggestions.length) {
+        handleSelect(suggestions[selectedIndex].text)
+      } else {
+        setShowSuggestions(false)
+        handleSearch()
+      }
+      return
+    }
+
     if (!visibleSuggestions) return
 
     switch (e.key) {
@@ -65,12 +76,6 @@ export default function Home() {
       case 'ArrowUp':
         e.preventDefault()
         setSelectedIndex(prev => (prev > 0 ? prev - 1 : suggestions.length - 1))
-        break
-      case 'Enter':
-        if (selectedIndex >= 0 && selectedIndex < suggestions.length) {
-          e.preventDefault()
-          handleSelect(suggestions[selectedIndex].text)
-        }
         break
       case 'Escape':
         setShowSuggestions(false)
