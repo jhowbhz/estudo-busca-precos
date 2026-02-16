@@ -132,5 +132,9 @@ Comparar precos manualmente em dezenas de sites e demorado. O BuscaPrecos faz is
   <img src="./demo-busca-precos.gif" width="100%" />
 </p>
 
+## Screenshot API
+
+<img width="1498" height="789" alt="image" src="https://github.com/user-attachments/assets/3ac7d78d-2165-4b65-ae0a-465ce595a53b" />
+
 ## Licença
 MIT
