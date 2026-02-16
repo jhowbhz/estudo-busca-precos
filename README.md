@@ -126,5 +126,11 @@ Comparar precos manualmente em dezenas de sites e demorado. O BuscaPrecos faz is
 </div>
 
 
+## 🎥 Demonstração
+
+<p align="center">
+  <img src="./demo-busca-precos.gif" width="100%" />
+</p>
+
 ## Licença
 MIT
